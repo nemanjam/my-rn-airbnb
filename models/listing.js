@@ -1,13 +1,13 @@
-import mongoose from "mongoose";
+import mongoose from 'mongoose';
 
 var listingSchema = new mongoose.Schema({
   title: {
     type: String,
-    required: true
+    required: true,
   },
   description: {
-    type: String
-  }
+    type: String,
+  },
 });
 
-export default mongoose.model("Listing", listingSchema);
+export default mongoose.model('Listing', listingSchema);
